@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import socket
+from termcolor import colored
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socket.setdefaulttimeout(2)
@@ -16,9 +17,9 @@ for i in range(0,number_of_ports):
 def portScanner(args):
 	#for port in ports: -> Unhash this if you need to specify the ports yourself
 	if sock.connect_ex((host, port)):
-		print("Port ",port, " is closed")
+		print(colored("Port ",port, " is closed", 'red'))
 	else:
-		print("Port ",port, " is open")
+		print(colored("Port ",port, " is open", 'green'))
 
 #portScanner(ports)
 
