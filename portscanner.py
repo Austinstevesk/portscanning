@@ -3,6 +3,7 @@
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket.setdefaulttimeout(2)
 ports = []
 
 host = input("[*]Enter the host to scan: ")
@@ -15,7 +16,6 @@ def portScanner(args):
 		if sock.connect_ex((host, port)):
 			print("Port ",port, " is closed")
 		else:
-			print("Port ",port, " is opened")
-
+			print("Port ",port, " is open")
 
 portScanner(ports)
