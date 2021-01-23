@@ -21,7 +21,7 @@ def connScan(tgtHost, tgtPort): #Returns whether the port is closed or open
 		print("[-] tcp Closed ", tgtPort)
 
 	finally:
-		sock.close()
+		sock.close() #Closes socket when done
 
 
 def portScan(tgtHost, tgtPorts): #Resolves names and addresses
