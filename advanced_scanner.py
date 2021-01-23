@@ -53,4 +53,4 @@ def main():
 		exit(0)
 	portScan(tgtHost, tgtPorts) #Runs the portScan function
 if __name__ == '__main__': 
-	main()
+	main() #Run the main function
