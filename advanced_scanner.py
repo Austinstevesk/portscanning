@@ -51,6 +51,6 @@ def main():
 	if (tgtHost == None or (tgtPorts[0]) == None):
 		print(parser.usage)
 		exit(0)
-	portScan(tgtHost, tgtPorts)
-if __name__ == '__main__':
+	portScan(tgtHost, tgtPorts) #Runs the portScan function
+if __name__ == '__main__': 
 	main()
