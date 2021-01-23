@@ -37,7 +37,7 @@ def portScan(tgtHost, tgtPorts): #Resolves names and addresses
 
 		setdefaulttimeout(1)
 	for tgtPort in tgtPorts:
-		t = Thread(target=connScan, args=[tgtHost, int(tgtPort)])
+		t = Thread(target=connScan, args=[tgtHost, int(tgtPort)]) #Runs the connScan function
 		t.start()
 
 def main():
