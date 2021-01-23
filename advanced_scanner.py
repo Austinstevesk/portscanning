@@ -38,7 +38,7 @@ def portScan(tgtHost, tgtPorts): #Resolves names and addresses
 		setdefaulttimeout(1)
 	for tgtPort in tgtPorts:
 		t = Thread(target=connScan, args=[tgtHost, int(tgtPort)]) #Runs the connScan function
-		t.start()
+		t.start() #Starts the scan 
 
 def main():
 	parser = optparse.OptionParser('Usage of program: ' + '-H <target host> -p <target ports>') #Prints program usage
