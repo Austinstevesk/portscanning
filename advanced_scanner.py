@@ -31,7 +31,7 @@ def portScan(tgtHost, tgtPorts): #Resolves names and addresses
 		print("Unknown target host", tgtHost) #If the name isn't resolved
 	try:
 		tgtName = gethostbyaddr(tgtIP) 
-		print("[+] Scan results for: ", tgtName[0]) 
+		print("[+] Scan results for: ", tgtName[0]) #Scans the name using addresses
 	except:
 		print("[+] Scan results for: ", tgtIP)
 
