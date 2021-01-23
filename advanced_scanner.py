@@ -2,7 +2,7 @@
 
 
 #Running the program
-#1. python advanced_scanner.py -H AS -p 135,110,80,50,3306 -> Name is resolved
+#1. python advanced_scanner.py -H AS(your computer name) -p 135,110,80,50,3306 -> Name is resolved
 #2. python advanced_scanner.py -H 192.168.10.10 -p 135,110,80,50,3306
 #3. python advanced_scanner.py -H google.com -p 135,110,80,50,3306
 
