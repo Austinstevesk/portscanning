@@ -15,7 +15,7 @@ from threading import *
 def connScan(tgtHost, tgtPort): #Returns whether the port is closed or open
 	try:
 		sock = socket(AF_INET, SOCK_STREAM)
-		sock.connect((tgtHost, tgtPort))
+		sock.connect((tgtHost, tgtPort)) #checks whether TCP is open
 		print("[+] tcp Open ", tgtPort)
 	except:
 		print("[-] tcp Closed ", tgtPort)
